@@ -1,0 +1,34 @@
+OVERVIEW
+Online Archery Gaming Website
+
+Category: Web Development
+Platform: Web browser (desktop and mobile responsive, minimum width 320px)
+Base resolution: 1280x720 (desktop)
+Target frame rate: 60 FPS
+
+Summary:
+A single-player, browser-based archery game that runs fully on the client. The
+player draws a bow using a power bar, accounts for wind, and shoots 10 arrows at
+a 5-ring target across 3 difficulty levels. Scores are recorded on a local
+top-10 leaderboard. The game uses a medieval and nature theme.
+
+Technology:
+- HTML5, CSS3, and Vanilla JavaScript (Canvas API)
+- requestAnimationFrame game loop
+- localStorage for leaderboard persistence
+- No backend, no server, no database
+- No authentication or login
+- No paid libraries or plugins
+- No frameworks (no Unity, no React)
+
+Core experience:
+- Hold mouse or tap to charge the power bar; release to fire an arrow.
+- A wind indicator is shown on screen and alters arrow trajectory.
+- A 5-ring target scores Bullseye 10, Gold 8, Red 6, Blue 4, Black 2; miss is 0.
+- Maximum single-round score is 100 points.
+- 3 difficulty levels (Easy, Medium, Hard) change target scale, wind, and timer.
+- Four screens: Home, Game, Results, Leaderboard, reachable without page reload.
+
+Deployment:
+Static files. The game runs by opening index.html in a browser and works
+offline after the first load.

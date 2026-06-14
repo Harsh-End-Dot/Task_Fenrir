@@ -1,0 +1,42 @@
+| S.No | Rubric |
+|---|---|
+| 1 | The game renders inside a single HTML5 canvas element. |
+| 2 | The game is built using Vanilla JavaScript. |
+| 3 | The game uses the Canvas API for rendering. |
+| 4 | No backend server is used. |
+| 5 | No database is used. |
+| 6 | No login or authentication exists. |
+| 7 | No third-party JavaScript framework is used. |
+| 8 | The game loop uses requestAnimationFrame. |
+| 9 | The game runs at 60 FPS on the latest desktop Chrome. |
+| 10 | The desktop base resolution is 1280×720. |
+| 11 | The game is playable at a 320px viewport width. |
+| 12 | The game launches by opening index.html. |
+| 13 | The game makes no network calls after first load. |
+| 14 | A round consists of exactly 10 arrows. |
+| 15 | The target contains exactly 5 scoring rings. |
+| 16 | A bullseye hit awards 10 points. |
+| 17 | The Gold ring awards 8 points. |
+| 18 | The Red ring awards 6 points. |
+| 19 | The Blue ring awards 4 points. |
+| 20 | The Black ring awards 2 points. |
+| 21 | A miss scores 0 points. |
+| 22 | The maximum single-round score is 100 points. |
+| 23 | The power bar takes 2 seconds to fill from 0% to 100%. |
+| 24 | The power bar resets to 0% after each shot. |
+| 25 | Exactly 3 difficulty levels are selectable. |
+| 26 | Easy difficulty uses a 60-second round timer. |
+| 27 | Medium difficulty uses a 45-second round timer. |
+| 28 | Hard difficulty uses a 30-second round timer. |
+| 29 | Easy difficulty applies wind of ±1 to ±3 px per frame. |
+| 30 | Medium difficulty applies wind of ±4 to ±6 px per frame. |
+| 31 | Hard difficulty applies wind of ±7 to ±12 px per frame. |
+| 32 | A wind indicator is displayed on screen during play. |
+| 33 | The leaderboard stores the top 10 scores. |
+| 34 | Leaderboard scores are sorted in descending order. |
+| 35 | Leaderboard data persists in localStorage across a page refresh. |
+| 36 | The initials input is limited to 3 characters. |
+| 37 | All four screens are reachable without a page reload. |
+| 38 | Forest Green #2D5A27 is used as the primary background color. |
+| 39 | Crimson Red #C0392B appears only on the target's Red ring. |
+| 40 | No console errors occur on launch. |

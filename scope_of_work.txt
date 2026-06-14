@@ -1,0 +1,67 @@
+SCOPE OF WORK
+Online Archery Gaming Website
+
+IN SCOPE
+1. Game engine
+   - Canvas render loop targeting 60 FPS using requestAnimationFrame.
+   - Custom 2D physics: gravity, velocity, and horizontal wind offset in vanilla JS.
+
+2. Bow and shooting mechanic
+   - Power bar charged by holding mouse or tap.
+   - Power bar fills 0% to 100% linearly over 2 seconds.
+   - Power bar holds at 100%, does not cycle, and does not auto-fire.
+   - Power bar resets to 0% after each shot.
+   - Release fires the arrow at the current power.
+
+3. Target and scoring
+   - 5-ring circular target with distance-based hit detection.
+   - Points: Bullseye 10, Gold 8, Red 6, Blue 4, Black 2; miss 0.
+   - Ring radii at baseline: Bullseye 20px, Gold 40px, Red 65px, Blue 95px, Black 130px.
+   - Maximum round score is 100 points.
+
+4. Wind system
+   - On-screen wind indicator.
+   - Wind alters arrow trajectory using the active difficulty wind range.
+
+5. Difficulty levels (3 total)
+   - Easy:   1.0x scale,  wind +/-1 to +/-3 px per frame,  60s timer.
+   - Medium: 0.7x scale,  wind +/-4 to +/-6 px per frame,  45s timer.
+   - Hard:   0.45x scale, wind +/-7 to +/-12 px per frame, 30s timer.
+
+6. Round logic
+   - 10 arrows per round.
+   - Round ends after the 10th arrow or when the timer reaches 0.
+
+7. Leaderboard
+   - Top 10 scores stored in localStorage.
+   - Sorted in descending order.
+   - Persists across page refresh.
+   - Stores initials (3 characters), score, and difficulty.
+
+8. Screens and navigation
+   - Home, Game, Results, and Leaderboard screens.
+   - All four screens reachable without a page reload.
+
+9. UI theme
+   - Medieval and nature theme.
+   - Palette: Forest Green #2D5A27, Aged Wood #8B6914, Cream Parchment #F5E6C8,
+     Deep Red #8B1A1A, Sky Blue #87CEEB.
+   - Crimson Red #C0392B is used only for the target Red ring.
+
+10. Documentation
+    - README.md with setup and play instructions.
+
+OUT OF SCOPE
+- Backend, server, or database.
+- Authentication or login.
+- Paid libraries or plugins.
+- Multiplayer.
+- AI opponents.
+- Unity, React, or any framework. Vanilla JS only.
+
+DELIVERABLES
+1. index.html  - main entry point.
+2. style.css   - all styling.
+3. game.js     - all game logic.
+4. assets/     - all images and sounds used.
+5. README.md   - setup and play instructions.
