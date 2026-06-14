@@ -203,7 +203,7 @@ reference_image.png shows the Game Screen layout, element positions, color theme
 
 ## Deliverables
 
-| # | Item | Filename | Format | Notes |
+| S.No | Item | Filename | Format | Notes |
 |---|---|---|---|---|
 | 1 | Main entry point | `index.html` | `.html` | Opens and runs the game |
 | 2 | Styling | `style.css` | `.css` | All styling; theme and palette applied |
